@@ -40,7 +40,11 @@ export default function Layout({ children }) {
       <div className="md:hidden bg-white shadow-sm p-4 flex items-center justify-between">
         <div className="flex items-center space-x-3">
           <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center">
-            <User className="text-white" size={20} />
+            <img
+              src={user.profile_image}
+              alt={user.name}
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="text-sm">
             <p className="font-semibold">{user?.name}</p>
